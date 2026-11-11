@@ -11,7 +11,7 @@ crash.log
 crash.*.log
 
 # Exclude all variable files containing sensitive credentials or environment-specific values
-*.tfvars
+#*.tfvars
 *.tfvars.json
 
 # Exclude automatically generated override files

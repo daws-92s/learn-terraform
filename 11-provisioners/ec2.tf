@@ -13,7 +13,7 @@ resource "aws_instance" "provisioners" {
 
   provisioner "local-exec" {
     when    = destroy
-    command = "echo 'Instance is going to be destyoyed' "
+    command = "echo 'Instance is going to be destyoyed' " # echo > inventory.ini
   }
 
   connection {

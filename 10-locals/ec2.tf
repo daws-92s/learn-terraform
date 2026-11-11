@@ -24,7 +24,11 @@ resource "aws_security_group" "locals_demo" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
-  tags = {
-    Name = "roboshop-locals-demo"
-  }
+  tags = merge(
+    local.common_tags,
+    {
+      Name = "roboshop-locals-demo"
+    }
+  )
+  
 }
